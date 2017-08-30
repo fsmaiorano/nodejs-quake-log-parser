@@ -1,0 +1,33 @@
+{
+  "name": "nodejs-quake-log-parser",
+  "version": "1.0.0",
+  "description": "This project has the purpose of convert a log of Quake 3 an JSON consumable object.",
+  "main": "src/loader.js",
+  "scripts": {
+    "dev": "nodemon",
+    "prod": "pm2 start src/loader.js --name quake3-log && mocha",
+    "stop-prod": "pm2 kill",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://fsmaiorano@bitbucket.org/fsmaiorano/nodejs-quake-log-parser.git"
+  },
+  "keywords": [
+    "quake3",
+    "log",
+    "parser",
+    "games"
+  ],
+  "author": "Fábio Santini Maiorano <fsmaiorano@gmail.com>",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/fsmaiorano/nodejs-quake-log-parser#readme",
+  "devDependencies": {
+    "body-parser": "^1.17.2",
+    "chai": "^4.1.1",
+    "consign": "^0.1.6",
+    "express": "^4.15.4",
+    "mocha": "^3.5.0",
+    "pm2": "^2.6.1"
+  }
+}
